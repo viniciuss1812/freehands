@@ -1,8 +1,14 @@
 public class tamagoshi {
-    String nome = "Jean Grey";
+    String nome;
     int fome;
     int saude;
     int idade;
+    public tamagoshi(String nome, int fome, int idade, int saude){
+        this.nome = nome;
+        this.fome = fome;
+        this.idade = idade;
+        this.saude = saude;
+    }
 
     public String getNome(){
         return nome;
@@ -10,12 +16,12 @@ public class tamagoshi {
     public int getSaude(){
         return saude;
     }
-    public int getIdade(){
-
-        return idade;
-    }
+    public int getIdade(){return idade;}
     public int getFome(){
         return fome;
+    }
+    public void getAtributos (){
+        System.out.println("Nome:"+nome +" Idade:" +idade+ " Saúde:" +saude+ " Fome:" +fome);
     }
 
     public String setNome(String nome){
@@ -37,3 +43,4 @@ public class tamagoshi {
 
 
 }
+
