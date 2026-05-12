@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paint Simples</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- MENU LATERAL -->
+    <div class="toolbar">
+
+      <h2>🎨 Paint</h2>
+
+      <!-- CORES -->
+      <div>
+        <div class="section-title">Cores</div>
+
+        <div class="colors">
+          <div class="color" style="background:black;" data-color="black"></div>
+          <div class="color" style="background:red;" data-color="red"></div>
+          <div class="color" style="background:blue;" data-color="blue"></div>
+          <div class="color" style="background:green;" data-color="green"></div>
+          <div class="color" style="background:yellow;" data-color="yellow"></div>
+          <div class="color" style="background:purple;" data-color="purple"></div>
+          <div class="color" style="background:orange;" data-color="orange"></div>
+          <div class="color" style="background:pink;" data-color="pink"></div>
+          <div class="color" style="background:brown;" data-color="brown"></div>
+        </div>
+      </div>
+
+      <!-- FERRAMENTAS -->
+      <div>
+        <div class="section-title">Ferramentas</div>
+
+        <button class="brush" id="brushBtn">Pincel</button>
+        <button class="eraser" id="eraserBtn">Borracha</button>
+      </div>
+
+      <!-- TAMANHO -->
+      <div class="slider-container">
+        <div class="section-title">Tamanho do pincel</div>
+
+        <input type="range" min="1" max="50" value="5" id="brushSize">
+      </div>
+
+      <!-- LIMPAR -->
+      <button class="clear" id="clearCanvas">
+        Limpar Tela
+      </button>
+
+    </div>
+
+    <!-- ÁREA DE DESENHO -->
+    <div class="drawing-area">
+      <canvas id="canvas"></canvas>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

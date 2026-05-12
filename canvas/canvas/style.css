@@ -1,0 +1,120 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, sans-serif;
+}
+
+body{
+  background:#1e1e1e;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+}
+
+.container{
+  display:flex;
+  width:95%;
+  height:95vh;
+  background:#2c2c2c;
+  border-radius:15px;
+  overflow:hidden;
+  box-shadow:0 0 20px rgba(0,0,0,0.5);
+}
+
+/* MENU LATERAL */
+.toolbar{
+  width:220px;
+  background:#181818;
+  padding:20px;
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+  border-right:2px solid #333;
+}
+
+.toolbar h2{
+  color:white;
+  text-align:center;
+  margin-bottom:10px;
+}
+
+.section-title{
+  color:#ccc;
+  margin-bottom:10px;
+  font-size:14px;
+  text-transform:uppercase;
+  letter-spacing:1px;
+}
+
+.colors{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:10px;
+}
+
+.color{
+  width:50px;
+  height:50px;
+  border-radius:10px;
+  cursor:pointer;
+  border:3px solid transparent;
+  transition:0.2s;
+}
+
+.color:hover{
+  transform:scale(1.1);
+  border-color:white;
+}
+
+button{
+  padding:12px;
+  border:none;
+  border-radius:10px;
+  cursor:pointer;
+  font-size:15px;
+  font-weight:bold;
+  transition:0.2s;
+  margin-top:10px;
+}
+
+button:hover{
+  transform:scale(1.03);
+}
+
+.brush{
+  background:#4caf50;
+  color:white;
+}
+
+.eraser{
+  background:#f44336;
+  color:white;
+}
+
+.clear{
+  background:#2196f3;
+  color:white;
+}
+
+.slider-container{
+  color:white;
+}
+
+input[type="range"]{
+  width:100%;
+  margin-top:10px;
+}
+
+/* ÁREA DE DESENHO */
+.drawing-area{
+  flex:1;
+  background:white;
+  position:relative;
+}
+
+canvas{
+  display:block;
+  cursor:crosshair;
+}
